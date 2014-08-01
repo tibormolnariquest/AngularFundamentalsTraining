@@ -12,7 +12,30 @@ eventsApp.controller('EventController',
                 city:"Klausenburg",
                 province:"CJ"
             },
-            imageUrl:'img/AngularJS-large.png'
+            imageUrl:'img/AngularJS-large.png',
+            sessions:[
+                {
+                    name:"masterclass",
+                    creatorName: 'bob smith',
+                    duration: '1 hr',
+                    level:'Advanced',
+                    abstract:'This da shit'
+                },
+                {
+                    name:"fun and profit",
+                    creatorName: 'bob smith',
+                    duration: '1 hr',
+                    level:'Advanced',
+                    abstract:'This da shit'                    
+                },
+                {
+                    name:"controllers",
+                    creatorName: 'bob smith',
+                    duration: '1 hr',
+                    level:'Advanced',
+                    abstract:'This da shit'                    
+                }
+            ]
         }
             
     }
