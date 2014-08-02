@@ -19,24 +19,34 @@ eventsApp.controller('EventController',
                     creatorName: 'bob smith',
                     duration: '1 hr',
                     level:'Advanced',
-                    abstract:'This da shit'
+                    abstract:'This da shit',
+                    upVoteCount: 0
                 },
                 {
                     name:"fun and profit",
                     creatorName: 'bob smith',
                     duration: '1 hr',
                     level:'Advanced',
-                    abstract:'This da shit'                    
+                    abstract:'This da shit',
+                    upVoteCount: 0                 
                 },
                 {
                     name:"controllers",
                     creatorName: 'bob smith',
                     duration: '1 hr',
                     level:'Advanced',
-                    abstract:'This da shit'                    
+                    abstract:'This da shit',
+                    upVoteCount: 0                    
                 }
             ]
         }
             
+        $scope.upVoteSession = function(session) {
+            session.upVoteCount++;
+        }
+        
+        $scope.downVoteSession = function(session) {
+            session.upVoteCount--;
+        }        
     }
 );
